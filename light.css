@@ -1,0 +1,74 @@
+/* Reversible light variant: colors only; content and geometry stay unchanged. */
+:root {
+    --dompi-paper: #F7F8F4;
+    --dompi-mint: #ECF8F0;
+    --dompi-mint-strong: #DFF3E6;
+    --dompi-green: #22E66F;
+    --dompi-deep: #0C2B1A;
+    --dompi-ink: #111713;
+    --dompi-muted: #6E776F;
+}
+body { background: var(--dompi-paper); color: var(--dompi-ink); }
+nav a { color: var(--dompi-deep); }
+.hero-description, .hero-note, .chat-header span,
+.quick-benefit p, .step p, .receipt-copy h2 + p,
+.receipt-copy li, .receipt-result p, .audience-card p,
+.pricing-heading h2 + p, .price span, .plan-period,
+.pricing-features p, .pricing-card small, .faq-list details p,
+footer { color: var(--dompi-muted); }
+.quick-benefit strong, .section-heading h2, .step h3,
+.audience-heading h2, .audience-card h3, footer strong { color: var(--dompi-ink); }
+/* Alternate existing sections without adding wrappers or changing spacing. */
+.quick-benefits, .how-it-works { background: var(--dompi-mint); }
+.audience-section, .pricing-section { background: var(--dompi-mint-strong); }
+.receipt-section, .faq-section { background: var(--dompi-paper); }
+.hero-badge {
+    color: var(--dompi-deep);
+    background: var(--dompi-mint-strong);
+    border-color: var(--dompi-green);
+}
+.benefit-icon { color: var(--dompi-green); }
+.section-heading > p, .receipt-copy > p:first-child,
+.step span, .audience-heading > p, .audience-card span,
+.pricing-heading > p:first-child, .faq-heading > p,
+.faq-list a { color: var(--dompi-deep); }
+.receipt-copy li::before, .faq-list summary::after { color: var(--dompi-green); }
+.section-heading .section-description { color: var(--dompi-muted); }
+.chat-card, .step, .receipt-photo, .receipt-result, .pricing-card {
+    background: #fff;
+    border-color: var(--dompi-mint-strong);
+    box-shadow: 0 12px 34px rgba(12, 43, 26, 0.055);
+}
+.chat-card, .pricing-card:last-child { border-color: var(--dompi-green); }
+.chat-header { background: var(--dompi-mint); border-color: var(--dompi-mint-strong); }
+.bot-message { background: var(--dompi-mint); color: var(--dompi-ink); border-color: var(--dompi-mint-strong); }
+.chat-action { background: var(--dompi-mint-strong); color: var(--dompi-deep); border-color: var(--dompi-green); }
+.receipt-photo > span, .receipt-result > span { color: var(--dompi-deep); }
+.fake-receipt { background: var(--dompi-paper); box-shadow: 0 8px 22px rgba(12, 43, 26, 0.09); }
+nav a:last-child, .hero-button, .buy-button, .final-cta a, .user-message {
+    background: var(--dompi-green);
+    color: var(--dompi-deep);
+    box-shadow: none;
+}
+.quick-benefits-inner, .audience-section, .audience-grid, .audience-card,
+.pricing-section, .faq-section, .faq-list details,
+.faq-list details:last-child, footer { border-color: rgba(12, 43, 26, 0.12); }
+.benefit-section, .final-cta { background: var(--dompi-deep); border-color: var(--dompi-deep); }
+.benefit-label p, .final-cta > p { color: var(--dompi-green); }
+.benefit-content h2, .final-cta h2 { color: var(--dompi-mint-strong); }
+.benefit-description, .final-cta span { color: var(--dompi-mint-strong); }
+.final-cta h3 { color: var(--dompi-paper); }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--dompi-green); outline-offset: 4px; }
+
+/* Final public theme: soft secondary actions and a mint FAQ section. */
+.faq-section { background: var(--dompi-mint); }
+nav a:last-child, .pricing-card:first-child .buy-button {
+    background: var(--dompi-mint-strong);
+    color: var(--dompi-deep);
+    box-shadow: inset 0 0 0 1px rgba(12, 43, 26, 0.2);
+}
+.dashboard-button {
+    background: var(--dompi-mint-strong);
+    color: var(--dompi-deep);
+    box-shadow: inset 0 0 0 1px var(--dompi-green);
+}

@@ -988,3 +988,23 @@ footer span {
         text-align: center;
     }
 }
+/* Content update: reuse existing cards, colors and responsive spacing. */
+.section-heading .section-description {
+    margin-top: 20px;
+    color: #969994;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.dashboard-button { margin-top: 28px; }
+.pricing-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.pricing-grid .pricing-card { display: flex; flex-direction: column; width: 100%; }
+.pricing-card h3 { font-size: 24px; margin-bottom: 18px; }
+.pricing-card .hero-badge { align-self: flex-start; }
+.pricing-card .price { margin-bottom: 12px; }
+.plan-period { color: #969994; margin-bottom: 36px; }
+.pricing-grid .buy-button { margin-top: auto; }
+.faq-list a { color: #2df77b; }
+@media (min-width: 769px) {
+    .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
