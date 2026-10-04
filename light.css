@@ -72,3 +72,13 @@ nav a:last-child, .pricing-card:first-child .buy-button {
     color: var(--dompi-deep);
     box-shadow: inset 0 0 0 1px var(--dompi-green);
 }
+
+/* Conversion copy and compact product example, using existing theme tokens. */
+.hero-accent { color: var(--dompi-deep); }
+.product-demo { background: var(--dompi-paper); }
+.demo-flow { list-style: none; padding: 0; margin: 0 auto; max-width: 540px; text-align: center; }
+.demo-flow li { display: flex; flex-direction: column; align-items: center; gap: 16px; margin: 16px 0; }
+.demo-example { background: var(--dompi-mint-strong); color: var(--dompi-deep); border: 1px solid var(--dompi-green); border-radius: 18px; padding: 18px 32px; font-size: 24px; }
+.demo-arrow { color: var(--dompi-deep); font-size: 24px; }
+.demo-flow strong { font-size: 20px; color: var(--dompi-ink); }
+.hero h1 { font-size: clamp(36px, 4vw, 56px); line-height: 1.12; }
